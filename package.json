@@ -1,0 +1,24 @@
+{
+  "name": "plant-based-burger-bonanza",
+  "version": "1.0.0",
+  "description": "An app to list desired and devoured burgers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keiththarp/plant-based-burger-bonanza"
+  },
+  "author": "Keith Tharp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keiththarp/plant-based-burger-bonanza/issues"
+  },
+  "homepage": "https://github.com/keiththarp/plant-based-burger-bonanza#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0",
+    "mysql": "^2.18.1"
+  }
+}
