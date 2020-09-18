@@ -1,5 +1,5 @@
 // Import the ORM to create functions that will interact with the database.
-const dbManager = require("./config/burgerDbManager");
+const dbManager = require("./config/orm.js");
 
 var burger = {
   all: function () {

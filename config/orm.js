@@ -98,4 +98,6 @@ class ORM {
 }
 
 // Export the orm object for the model (burger.js).
-module.exports = ORM;
+// module.exports = ORM;
+
+module.exports = new ORM(connection);
