@@ -34,16 +34,8 @@ class ORM {
   updateOne(id) {
     return this.query(`UPDATE burgers SET devoured = 1 WHERE id = ${id}`)
   }
-  deleteOne()
-
-
-
-  delete(table, condition) {
-    let queryString = "DELETE FROM " + table;
-    queryString += " WHERE ";
-    queryString += condition;
-
-    return this.query(queryString);
+  deleteOne() {
+    return this.query(`DELETE FROM burgers WHERE id = ${id}`)
   }
 
 };
