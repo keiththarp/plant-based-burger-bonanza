@@ -1,11 +1,11 @@
 <h1>burgers!</h1>
 
-<h2>burgers that are not Devoured!</h2>
+<h2>burgers that are not devoured!</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burger-block devoured=true}}
+  {{> burgers/burger-block devoured=1}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{> burgers/burger-block devoured=false}}
+  {{> burgers/burger-block devoured=0}}
   {{/if}}
   {{/each}}
 </ul>

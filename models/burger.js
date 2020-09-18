@@ -1,21 +1,21 @@
 // Import the ORM to create functions that will interact with the database.
-const db = require("../config/orm.js");
+const dbManager = require("../config/burgerDbManager");
 
-const burger = {
+var burger = {
   all: function () {
-    return db.selectAll("veganBurger_db");
+    return dbManager.all("burgers");
   },
   // The variables cols and vals are arrays.
   create: function (cols, vals) {
-    return db.inserOne("veganBurger_db", cols, vals);
+    return dbManager.create("burgers", cols, vals);
   },
   update: function (objColVals, condition) {
-    return db.updateOne("veganBurger_db", objColVals, condition);
+    return dbManager.update("burgers", objColVals, condition);
   },
   delete: function (condition) {
-    return db.deleteOne("veganBurger_db", condition);
+    return dbManager.delete("burgers", condition);
   }
 };
 
-// Export the database functions for the controller (routes.js).
+// Export the database functions for the controller (burgerController.js).
 module.exports = burger;

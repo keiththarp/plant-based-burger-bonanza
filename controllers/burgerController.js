@@ -11,10 +11,11 @@ router.get("/", async function (req, res) {
 });
 
 router.post("/api/burgers", async function (req, res) {
+  console.log(req.body);
   try {
     const result = await burger.create(
       [
-        "name", "devoured"
+        "burger_name", "devoured"
       ],
       [
         req.body.name, req.body.devoured
@@ -33,6 +34,7 @@ router.put("/api/burgers/:id", async function (req, res) {
   const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
+  console.log(req.body);
 
   try {
     const result = await burger.update({ devoured: req.body.devoured }, condition);
