@@ -2,7 +2,7 @@
   "name": "plant-based-burger-bonanza",
   "version": "1.0.0",
   "description": "An app to list desired and devoured burgers",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
