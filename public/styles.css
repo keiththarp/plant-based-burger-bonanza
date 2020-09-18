@@ -17,3 +17,38 @@ li {
 .form-group {
   margin-bottom: 5px;
 }
+
+.fa-trash-alt {
+  color: red;
+}
+img.happy-cow, img.burger-ico {
+  width: 100%;
+}
+.cow-bg {
+  background-image: url("./assets/images/5f65025315819.png");
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-size: 100%;
+  min-height: 90%;
+}
+.add-burger {
+  background-image: url("./assets/images/grassy-hill.png");
+  background-position: bottom; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-color: #fff;
+}
+
+div.burger-item {
+  min-height: 65px;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding: 10px 0px 10px 10px;
+  background: rgba(116, 186, 7);
+  border-radius: 4px;
+
+}
+div.col-6, div.col-4, div.col-2 {
+  padding: 0px;
+}

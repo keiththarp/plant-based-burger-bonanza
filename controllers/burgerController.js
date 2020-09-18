@@ -32,10 +32,6 @@ router.post("/api/burgers", async function (req, res) {
 
 router.put("/api/burgers/:id", async function (req, res) {
   const condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-  console.log(req.body);
-
   try {
     const result = await burger.update({ devoured: req.body.devoured }, condition);
     if (result.changedRows == 0) {

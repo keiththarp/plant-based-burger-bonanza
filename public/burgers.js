@@ -3,19 +3,15 @@ $(function () {
   $(".change-devoured").on("click", function (event) {
     var id = $(this).data("id");
     var newDevoured = $(this).attr("data-newDevoured");
-    console.log(newDevoured);
     var newDevouredState = {
       devoured: newDevoured
     };
-    console.log("NewDEvouredState");
-    console.log(newDevouredState);
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: newDevouredState
     }).then(
       function () {
-        console.log("changed devoured to", newDevoured);
         // Reload the page to get the updated list
         location.reload();
       }
