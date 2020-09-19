@@ -2,10 +2,8 @@
 $(function () {
   $(".change-devoured").on("click", function (event) {
     var id = $(this).data("id");
-    var newDevoured = $(this).attr("data-newDevoured");
-    var newDevouredState = {
-      devoured: newDevoured
-    };
+    // var newDevoured = $(this).attr("data-newDevoured");
+    var newDevouredState = 1;
     // Send the PUT request.
     $.ajax("/api/burgers/" + id, {
       type: "PUT",

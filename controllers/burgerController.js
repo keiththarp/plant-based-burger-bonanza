@@ -33,7 +33,7 @@ router.post("/api/burgers", async function (req, res) {
 router.put("/api/burgers/:id", async function (req, res) {
   const condition = "id = " + req.params.id;
   try {
-    const result = await burger.update({ devoured: req.body.devoured }, condition);
+    const result = await burger.update({ devoured: 1 }, condition);
     if (result.changedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
