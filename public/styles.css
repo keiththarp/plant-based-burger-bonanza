@@ -21,7 +21,11 @@ li {
 .fa-trash-alt {
   color: red;
 }
-img.happy-cow, img.burger-ico {
+img.happy-cow {
+  width: 100%;
+  padding-top: 25px;
+}
+img.burger-ico {
   width: 100%;
 }
 .cow-bg {
